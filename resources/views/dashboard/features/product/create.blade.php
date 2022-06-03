@@ -24,76 +24,61 @@
                                         <form action="" method="POST">
                                             @csrf
                                             <div class="mb-3 row">
-                                                <label for="example-text-input" class="col-md-3 col-form-label">Bank Name</label>
-                                                <div class="col-md-9">
-                                                    <input class="form-control" type="text">
-                                                </div>
-                                            </div>
-                                            <div class="mb-3 row">
-                                                <label for="example-text-input" class="col-md-3 col-form-label">Branch Name</label>
-                                                <div class="col-md-9">
-                                                    <input class="form-control" type="text">
-                                                </div>
-                                            </div>
-                                            <div class="mb-3 row">
-                                                <label for="example-text-input" class="col-md-3 col-form-label">Account Name</label>
-                                                <div class="col-md-9">
-                                                    <input class="form-control" type="text">
-                                                </div>
-                                            </div>
-                                            <div class="mb-3 row">
-                                                <label class="col-md-3 col-form-label">Account Type</label>
+                                                <label class="col-md-3 col-form-label">Brand</label>
                                                 <div class="col-md-9">
                                                     <select class="form-select">
                                                         <option value="">--Select--</option>
-                                                        <option value="Current">Current</option>
-                                                        <option value="Saving">Saving</option>
-                                                        <option value="Loan">Loan</option>
+                                                        <option value="Current">Brand-1</option>
+                                                        <option value="Saving">Brand-</option>
+                                                        <option value="Loan">Brand-</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
-                                                <label for="example-text-input" class="col-md-3 col-form-label">Account Number</label>
+                                                <label class="col-md-3 col-form-label">Color</label>
                                                 <div class="col-md-9">
-                                                    <input class="form-control" type="number">
+                                                    <select class="form-select">
+                                                        <option value="">--Select--</option>
+                                                        <option value="Current">Color-1</option>
+                                                        <option value="Saving">Color-2</option>
+                                                        <option value="Loan">Color-3</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
-                                                <label for="example-text-input" class="col-md-3 col-form-label">Present Deposit</label>
+                                                <label for="example-text-input" class="col-md-3 col-form-label">Get Pass Token</label>
                                                 <div class="col-md-9">
-                                                    <input class="form-control" type="text">
+                                                    <input name="get_pass_token" class="form-control" type="text">
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
-                                                <label for="example-date-input" class="col-md-3 col-form-label">Account Opening Date</label>
+                                                <label for="example-text-input" class="col-md-3 col-form-label">Chassis Number</label>
                                                 <div class="col-md-9">
-                                                    <input class="form-control" type="date"  id="example-date-input">
+                                                    <input name="chassis_no" class="form-control" type="text">
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-3 row">
+                                                <label for="example-text-input" class="col-md-3 col-form-label">Engin Number</label>
+                                                <div class="col-md-9">
+                                                    <input name="engin_number" class="form-control" type="number">
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
-                                                <label for="exampleDataList" class="col-md-3 col-form-label">Area</label>
+                                                <label for="example-text-input" class="col-md-3 col-form-label">Date Of Store</label>
                                                 <div class="col-md-9">
-                                                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
-                                                    <datalist id="datalistOptions">
-                                                        <option value="Dhaka">
-                                                        <option value="Barishal">
-                                                        <option value="Potuakhali">
-                                                        <option value="Jalokathi">
-                                                        <option value="Vola">
-                                                        <option value="Pirojpur">
-                                                        <option value="Borguna">
-                                                    </datalist>
+                                                    <input name="date_of_store" class="form-control" type="Date">
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
-                                                <label for="example-tel-input" class="col-md-3 col-form-label">Bank Contact No.</label>
+                                                <label for="example-text-input" class="col-md-3 col-form-label">Frame Name</label>
                                                 <div class="col-md-9">
-                                                    <input class="form-control" type="text" id="example-tel-input">
+                                                    <input name="frame_name" class="form-control" type="Date">
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
                                                 <div class="col-md-12">
-                                                    <input class="form-control btn btn-outline-danger" type="submit" value="Create An Account">
+                                                    <input class="form-control btn btn-outline-danger" type="submit" value="Add Motorcycle">
                                                 </div>
                                             </div>
 

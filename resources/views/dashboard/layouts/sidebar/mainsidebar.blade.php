@@ -55,10 +55,11 @@
                             <span class="color-primary">Product</span>
                         </a>
                         <ul class="sub-menu" aria-expanded="true">
-                            <li><a href="#">Create Catagory</a></li>
                             <li><a href="#">Create Model</a></li>
                             <li><a href="#">Create Color</a></li>
-                            <li><a href="#">Add Products</a></li>
+                            <li><a href="{{route('product.create')}}">Add Products</a></li>
+                            <li><a href="{{route('product.due')}}">Due Products</a></li>
+                            <li><a href="{{route('product.info')}}">Products Info Setup</a></li>
                         </ul>
                     </li>
                     <li>
@@ -69,7 +70,7 @@
                         <ul class="sub-menu" aria-expanded="true">
                             <li><a href="#">Create Catagory</a></li>
                             <li><a href="#">Create Name</a></li>
-                            <li><a href="#">Add Parts</a></li>
+                            <li><a href="{{route('spearparts')}}">Add Parts</a></li>
                         </ul>
                     </li>
                     <li>
@@ -88,12 +89,12 @@
                             <span class="color-primary">Setting</span>
                         </a>
                         <ul class="sub-menu" aria-expanded="true">
-                            <li><a href="#">Business Info</a></li>
-                            <li><a href="#">Initial Finance</a></li>
-                            <li><a href="#">Seles Point</a></li>
-                            <li><a href="#">Service Poinr</a></li>
-                            <li><a href="#">Employee</a></li>
-                            <li><a href="{{route('bank.create')}}">Bank Info</a></li>
+                            <li><a href="{{route('business.info')}}">Business Info</a></li>
+                            <li><a href="{{route('business.setup')}} ">Initial Finance</a></li>
+                            <li><a href="{{route('selespoint')}}">Seles Point</a></li>
+                            <li><a href="{{route('servicepoint')}}">Service Poinr</a></li>
+                            <li><a href="{{route('employee')}}">Employee</a></li>
+                            <li><a href="{{route('bank')}}">Bank Info</a></li>
                         </ul>
                     </li>
 

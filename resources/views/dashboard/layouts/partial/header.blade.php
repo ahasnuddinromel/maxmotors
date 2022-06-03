@@ -60,9 +60,21 @@
 
 
             <div class="dropdown d-inline-block">
-                <button type="button" class="btn header-item waves-effect">
-                    <span class="d-none d-xl-inline-block ms-1 fw-medium font-size-15">Sign out</span>
-                </button>
+
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <a href="{{route('logout')}}"
+                                onclick="querySelector('#logout_btn', function(event){
+                                event.preventDefault();
+                                this.closest('form').submit();
+                                })">
+                                 <button id="logout_btn" type="submit" class="btn header-item waves-effect">
+                                    <span class="d-none d-xl-inline-block ms-1 fw-medium font-size-15">Sign out</span>
+                                </button>
+                        </a>
+                    </form>
+
+
 
             </div>
 
