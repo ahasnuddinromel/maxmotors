@@ -47,6 +47,7 @@
                             <li><a href="#">Service Activity</a></li>
                             <li><a href="#">Pre Booking Status</a></li>
                             <li><a href="#">Banking Activity</a></li>
+                            <li><a href=" {{ route('customer')}}">Customer</a></li>
                         </ul>
                     </li>
                     <li>

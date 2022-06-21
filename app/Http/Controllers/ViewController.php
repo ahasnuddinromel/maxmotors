@@ -6,9 +6,16 @@ use Illuminate\Http\Request;
 
 class ViewController extends Controller
 {
+
+    //bank View
     public function bank(){
+        return view('dashboard.pages.bank.create');
+    }
+    public function bankSetup(){
         return view('dashboard.features.bank.create');
     }
+    //End bank View
+
 
     public function emplyee(){
         return view('dashboard.features.employee.create');

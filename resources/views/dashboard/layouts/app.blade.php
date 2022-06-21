@@ -23,6 +23,8 @@
         <!-- END layout-wrapper -->
 
         <!-- JAVASCRIPT -->
+
+        @include('dashboard.layouts.partial.footer')
         @include('dashboard.layouts.partial.script')
     </body>
 

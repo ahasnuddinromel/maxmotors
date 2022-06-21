@@ -43,19 +43,22 @@
 
                                 </div>
                                 <div class="p-2 mt-4">
-                                    <form action="#" method="POST">
+                                    <form method="POST" action="{{ route('login') }}">
                                         @csrf
                                         <div class="mb-3">
-                                            <label class="form-label" for="username">Username</label>
-                                            <input type="text" class="form-control" id="username" placeholder="Enter username">
+                                            <label class="form-label" for="email">Email</label>
+                                            <input name="email" type="text" class="form-control" id="email" placeholder="Enter email" value="{{old('email')}}" >
                                         </div>
 
                                         <div class="mb-3">
+
                                             <div class="float-end">
-                                                <a href="#" class="text-muted">Forgot password?</a>
+                                                @if (Route::has('password.request'))
+                                                    <a href="{{ route('password.request') }}" class="text-muted">Forgot password?</a>
+                                                 @endif
                                             </div>
                                             <label class="form-label" for="userpassword">Password</label>
-                                            <input type="password" class="form-control" id="userpassword" placeholder="Enter password">
+                                            <input name="password" type="password" class="form-control" id="userpassword" placeholder="Enter password">
                                         </div>
 
                                         <div class="form-check">
@@ -64,7 +67,7 @@
                                         </div>
 
                                         <div class="mt-3 text-end">
-                                            <button class="btn btn-danger w-sm waves-effect waves-light" type="submit">Log In</button>
+                                            <button class="btn btn-danger w-sm waves-effect waves-light" type="submit"> {{ __('Log in') }}</button>
                                         </div>
                                     </form>
                                 </div>
