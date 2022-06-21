@@ -1,56 +1,100 @@
-<x-guest-layout>
-    <x-auth-card>
-        <x-slot name="logo">
-            <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-            </a>
-        </x-slot>
 
-        <!-- Session Status -->
-        <x-auth-session-status class="mb-4" :status="session('status')" />
+<!doctype html>
+<html lang="en">
+<head>
 
-        <!-- Validation Errors -->
-        <x-auth-validation-errors class="mb-4" :errors="$errors" />
+        <meta charset="utf-8" />
+        <title>Login | Max Motors - Admin</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Max Motors" name="description" />
+        <meta content="Maxmotors" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
 
-        <form method="POST" action="{{ route('login') }}">
-            @csrf
+        <!-- Bootstrap Css -->
+        <link href="{{asset('assets/css/bootstrap.min.css')}}" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="{{asset('assets/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="{{asset('assets/css/app.min.css')}}" id="app-style" rel="stylesheet" type="text/css" />
 
-            <!-- Email Address -->
-            <div>
-                <x-label for="email" :value="__('Email')" />
+    </head>
 
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
+    <body class="authentication-bg">
+        <div class="account-pages my-5 pt-sm-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center">
+                            <a href="index.html" class="mb-5 d-block auth-logo">
+                                <img src="{{asset('assets/images/maximg/maxpluslogo.png')}}" alt="" height="150" class="logo logo-dark">
+                                <img src="{{asset('assets/images/maximg/maxpluslogo.png')}} " alt="" height="150" class="logo logo-light">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-8 col-lg-6 col-xl-5">
+                        <div class="card">
+
+                            <div class="card-body p-4">
+                                <div class="text-center mt-2">
+                                    <h5 class="color-primary">Sign In To Admin</h5>
+
+                                </div>
+                                <div class="p-2 mt-4">
+                                    <form method="POST" action="{{ route('login') }}">
+                                        @csrf
+                                        <div class="mb-3">
+                                            <label class="form-label" for="email">Email</label>
+                                            <input name="email" type="text" class="form-control" id="email" placeholder="Enter email" value="{{old('email')}}" >
+                                        </div>
+
+                                        <div class="mb-3">
+
+                                            <div class="float-end">
+                                                @if (Route::has('password.request'))
+                                                    <a href="{{ route('password.request') }}" class="text-muted">Forgot password?</a>
+                                                 @endif
+                                            </div>
+                                            <label class="form-label" for="userpassword">Password</label>
+                                            <input name="password" type="password" class="form-control" id="userpassword" placeholder="Enter password">
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="auth-remember-check">
+                                            <label class="form-check-label" for="auth-remember-check">Remember me</label>
+                                        </div>
+
+                                        <div class="mt-3 text-end">
+                                            <button class="btn btn-danger w-sm waves-effect waves-light" type="submit"> {{ __('Log in') }}</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- end row -->
             </div>
+            <!-- end container -->
+        </div>
 
-            <!-- Password -->
-            <div class="mt-4">
-                <x-label for="password" :value="__('Password')" />
+        <!-- JAVASCRIPT -->
+        <script src="{{asset('assets/libs/jquery/jquery.min.js')}}"></script>
+        <script src="{{asset('assets/libs/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+        <script src="{{asset('assets/libs/metismenu/metisMenu.min.js')}}"></script>
+        <script src="{{asset('assets/libs/simplebar/simplebar.min.js')}}"></script>
+        <script src="{{asset('assets/libs/node-waves/waves.min.js')}}"></script>
+        <script src="{{asset('assets/libs/waypoints/lib/jquery.waypoints.min.js')}}"></script>
+        <script src="{{asset('assets/libs/jquery.counterup/jquery.counterup.min.js')}}"></script>
 
-                <x-input id="password" class="block mt-1 w-full"
-                                type="password"
-                                name="password"
-                                required autocomplete="current-password" />
-            </div>
+        <!-- App js -->
+        <script src="{{asset('assets/js/app.js')}}"></script>
 
-            <!-- Remember Me -->
-            <div class="block mt-4">
-                <label for="remember_me" class="inline-flex items-center">
-                    <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" name="remember">
-                    <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
-                </label>
-            </div>
+    </body>
+</html>
 
-            <div class="flex items-center justify-end mt-4">
-                @if (Route::has('password.request'))
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
-                        {{ __('Forgot your password?') }}
-                    </a>
-                @endif
-
-                <x-button class="ml-3">
-                    {{ __('Log in') }}
-                </x-button>
-            </div>
-        </form>
-    </x-auth-card>
-</x-guest-layout>
