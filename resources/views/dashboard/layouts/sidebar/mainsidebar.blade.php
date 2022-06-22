@@ -56,8 +56,9 @@
                             <span class="color-primary">Product</span>
                         </a>
                         <ul class="sub-menu" aria-expanded="true">
-                            <li><a href="#">Create Model</a></li>
-                            <li><a href="#">Create Color</a></li>
+                            <li><a href="#">All Products</a></li>
+                            <li><a id="mc_color_btn" data-bs-toggle="modal" data-bs-target="#mc_color_modal" href="#">Create Color</a></li>
+                            <li><a id="mc_model_btn" data-bs-toggle="modal" data-bs-target="#mc_model_modal" href="#">Create Model</a></li>
                             <li><a href="{{route('product.create')}}">Add Products</a></li>
                             <li><a href="{{route('product.due')}}">Due Products</a></li>
                             <li><a href="{{route('product.info')}}">Products Info Setup</a></li>
@@ -69,8 +70,8 @@
                             <span class="color-primary">Spear Parts Setup</span>
                         </a>
                         <ul class="sub-menu" aria-expanded="true">
-                            <li><a href="#">Create Catagory</a></li>
-                            <li><a href="#">Create Name</a></li>
+                            <li><a id="spear_parts_cata_btn" data-bs-toggle="modal" data-bs-target="#spm_modal" href="#">Create Catagory</a></li>
+                            <li><a id="spear_parts_rack_btn" data-bs-toggle="modal" data-bs-target="#spr_modal" href="#">Create Rack Name</a></li>
                             <li><a href="{{route('spearparts')}}">Add Parts</a></li>
                         </ul>
                     </li>
@@ -93,7 +94,7 @@
                             <li><a href="{{route('business.info')}}">Business Info</a></li>
                             <li><a href="{{route('business.setup')}} ">Initial Finance</a></li>
                             <li><a href="{{route('selespoint')}}">Seles Point</a></li>
-                            <li><a href="{{route('servicepoint')}}">Service Poinr</a></li>
+                            <li><a href="{{route('servicepoint')}}">Service Point</a></li>
                             <li><a href="{{route('employee')}}">Employee</a></li>
                             <li><a href="{{route('bank')}}">Bank Info</a></li>
                         </ul>

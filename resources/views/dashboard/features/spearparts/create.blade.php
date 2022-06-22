@@ -21,7 +21,7 @@
                                 <div class="card">
                                     <div class="card-body">
 
-                                        <form action="" method="POST">
+                                        <form action="" method="POST" enctype="multipart/form-data">
                                             @csrf
                                             <div class="mb-3 row">
                                                 <label for="example-text-input" class="col-md-3 col-form-label">Name</label>
@@ -43,7 +43,7 @@
                                             <div class="mb-3 row">
                                                 <label for="example-text-input" class="col-md-3 col-form-label">Tread Price</label>
                                                 <div class="col-md-9">
-                                                    <input name="parts_tread_price" class="form-control" type="text">
+                                                    <input name="parts_tread_price" class="form-control" type="number">
                                                 </div>
                                             </div>
 
@@ -56,7 +56,18 @@
                                             <div class="mb-3 row">
                                                 <label for="example-text-input" class="col-md-3 col-form-label">Quantity</label>
                                                 <div class="col-md-9">
-                                                    <input name="parts_quantity" class="form-control" type="text">
+                                                    <input name="parts_quantity" class="form-control" type="number">
+                                                </div>
+                                            </div>
+                                            <div class="mb-3 row">
+                                                <label class="col-md-3 col-form-label">Rack Name</label>
+                                                <div class="col-md-9">
+                                                    <select class="form-select" name="rack_name">
+                                                        <option value="">--Select--</option>
+                                                        <option value="A-1">A-1</option>
+                                                        <option value="A-2">A-2</option>
+                                                        <option value="A-3">A-3</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
@@ -78,29 +89,8 @@
                             </div> <!-- end col -->
                         </div>
                         <!-- end row -->
-
-
-
-
-
-
-
-
-
                     </div> <!-- container-fluid -->
                 </div>
                 <!-- End Page-content -->
 
-
-                <footer class="footer">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <p>2022 &copy; ahsan.romel6@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-            </div>
-            <!-- end main content-->
 @endsection
