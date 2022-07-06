@@ -23,8 +23,11 @@ class ViewController extends Controller
     public function customer(){
         return view('dashboard.features.customer.create');
     }
-    public function businessInfo(){
+    public function setupInfo(){
         return view('dashboard.features.businessinfo.create');
+    }
+    public function businessInfo(){
+        return view('dashboard.pages.businessinfo.create');
     }
     public function setup(){
         return view('dashboard.features.businessinfo.setup');

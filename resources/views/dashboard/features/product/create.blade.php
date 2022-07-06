@@ -20,7 +20,6 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-
                                         <form action="" method="POST">
                                             @csrf
                                             <div class="mb-3 row">

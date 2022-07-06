@@ -41,7 +41,8 @@
                             <span class="color-primary">Operation</span>
                         </a>
                         <ul class="sub-menu" aria-expanded="true">
-                            <li><a  href="#">Terget Fixing</a></li>
+                            <li><a  href="#">Terget Fixing Seles</a></li>
+                            <li><a  href="#">Terget Fixing Inquery</a></li>
                             <li><a href="#">MC Seles Activity</a></li>
                             <li><a href="#">Sp Activity</a></li>
                             <li><a href="#">Service Activity</a></li>

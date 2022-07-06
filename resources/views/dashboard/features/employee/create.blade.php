@@ -91,9 +91,7 @@
                                                     <input class="form-control btn btn-outline-danger" type="submit" value="Add Employee Info">
                                                 </div>
                                             </div>
-
                                         </form>
-
                                     </div>
                                 </div>
                             </div> <!-- end col -->

@@ -11,7 +11,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box">
-                                    <h4 class="card-title">Employee Information</h4>
+                                    <h4 class="card-title">Customer Information</h4>
                                 </div>
                             </div>
                         </div>

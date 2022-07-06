@@ -8,35 +8,28 @@
 
                          <div class="row">
                              <div class="col-12">
-                                <a class="btn btn-dark" href="#"> Add Transjection</a>
-                                <a class="btn btn-dark" href="#"> Create Account</a>
-                                <a class="btn btn-dark" href="#"> View Account</a><br>
+                                <a class="btn btn-dark" href="{{route('setup.info')}} ">Edit</a>
                                  <div class="card">
                                      <div class="card-body">
-                                         <h2>Tranjection History</h2>
+                                         <h2>Business History</h2>
                                          <table id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                              <thead>
                                              <tr>
-                                                 <th>Bank Name</th>
-                                                 <th>Account Name</th>
-                                                 <th>Account Number</th>
-                                                 <th>Tranjection Date</th>
-                                                 <th>Tranjection Amount</th>
-                                                 <th>Tranjection By</th>
-                                                 <th>Tranjection Reason</th>
+                                                 <th>Business Name</th>
+                                                 <th>Contact Number</th>
+                                                 <th>Logo</th>
+                                                 <th>Email</th>
+                                                 <th>Address</th>
                                              </tr>
                                              </thead>
                                              <tbody>
                                              <tr>
-                                                 <td>Brac Bank Corporate</td>
                                                  <td>Max Plus</td>
-                                                 <td>120.222.4567</td>
-                                                 <td>23/5/2022</td>
-                                                 <td>320,800 BDT</td>
-                                                 <td>Mr Ibrahim</td>
-                                                 <td>Due Payment</td>
-                                             </tr>
-
+                                                 <td>01711565544</td>
+                                                 <td><img src="#" alt=""></td>
+                                                 <td>maxplus@gmail.com</td>
+                                                 <td>Sadar Road Barishal</td>
+                                            </tr>
                                              </tbody>
                                          </table>
                                      </div>
