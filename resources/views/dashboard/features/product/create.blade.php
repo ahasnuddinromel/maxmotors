@@ -11,7 +11,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box">
-                                    <h4 class="card-title">Business Information</h4>
+                                    <h4 class="card-title">Product Information</h4>
                                 </div>
                             </div>
                         </div>
@@ -25,7 +25,7 @@
                                             <div class="mb-3 row">
                                                 <label class="col-md-3 col-form-label">Brand</label>
                                                 <div class="col-md-9">
-                                                    <select class="form-select">
+                                                    <select class="form-select" name="brand_id">
                                                         <option value="">--Select--</option>
                                                         <option value="Current">Brand-1</option>
                                                         <option value="Saving">Brand-</option>
@@ -36,7 +36,7 @@
                                             <div class="mb-3 row">
                                                 <label class="col-md-3 col-form-label">Color</label>
                                                 <div class="col-md-9">
-                                                    <select class="form-select">
+                                                    <select class="form-select" name="color_id">
                                                         <option value="">--Select--</option>
                                                         <option value="Current">Color-1</option>
                                                         <option value="Saving">Color-2</option>
@@ -60,7 +60,7 @@
                                             <div class="mb-3 row">
                                                 <label for="example-text-input" class="col-md-3 col-form-label">Engin Number</label>
                                                 <div class="col-md-9">
-                                                    <input name="engin_number" class="form-control" type="number">
+                                                    <input name="engin_number" class="form-control" type="text">
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
@@ -72,7 +72,13 @@
                                             <div class="mb-3 row">
                                                 <label for="example-text-input" class="col-md-3 col-form-label">Frame Name</label>
                                                 <div class="col-md-9">
-                                                    <input name="frame_name" class="form-control" type="Date">
+                                                    <input name="frame_name" class="form-control" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="mb-3 row">
+                                                <label for="example-text-input" class="col-md-3 col-form-label">Quantity</label>
+                                                <div class="col-md-9">
+                                                    <input name="product_quantity" class="form-control" type="number">
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">

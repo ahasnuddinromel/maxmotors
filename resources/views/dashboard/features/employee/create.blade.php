@@ -63,19 +63,19 @@
                                             <div class="mb-3 row">
                                                 <label for="example-text-input" class="col-md-3 col-form-label">Present Address</label>
                                                 <div class="col-md-9">
-                                                    <input name="emplyee_pr_address" class="form-control" type="number">
+                                                    <input name="emplyee_pr_address" class="form-control" type="text">
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
                                                 <label for="example-text-input" class="col-md-3 col-form-label">Permanent Address</label>
                                                 <div class="col-md-9">
-                                                    <input name="emplyee_permanent_address" class="form-control" type="number">
+                                                    <input name="emplyee_permanent_address" class="form-control" type="text">
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
                                                 <label for="example-text-input" class="col-md-3 col-form-label">NID No.</label>
                                                 <div class="col-md-9">
-                                                    <input name="nid_no" class="form-control" type="text">
+                                                    <input name="nid_no" class="form-control" type="number">
                                                 </div>
                                             </div>
 

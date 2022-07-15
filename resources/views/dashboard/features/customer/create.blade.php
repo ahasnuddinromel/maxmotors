@@ -100,7 +100,7 @@
                                             <div class="mb-3 row">
                                                 <label class="col-md-3 col-form-label">Model</label>
                                                 <div class="col-md-9">
-                                                    <select class="form-select">
+                                                    <select class="form-select" name="model">
                                                         <option value="">--Select--</option>
                                                         <option value="Current">Model-1</option>
                                                         <option value="Saving">Model-2</option>
@@ -111,7 +111,7 @@
                                             <div class="mb-3 row">
                                                 <label class="col-md-3 col-form-label">Color</label>
                                                 <div class="col-md-9">
-                                                    <select class="form-select">
+                                                    <select class="form-select" name="color">
                                                         <option value="">--Select--</option>
                                                         <option value="Current">Color-1</option>
                                                         <option value="Saving">Color-2</option>
@@ -122,7 +122,7 @@
                                             <div class="mb-3 row">
                                                 <label class="col-md-3 col-form-label">Engine Number</label>
                                                 <div class="col-md-9">
-                                                    <select class="form-select">
+                                                    <select class="form-select" name="engine_no">
                                                         <option value="">--Select--</option>
                                                         <option value="Current">Engine-1</option>
                                                         <option value="Saving">Engine-</option>
@@ -133,12 +133,18 @@
                                             <div class="mb-3 row">
                                                 <label class="col-md-3 col-form-label">Chassis Number</label>
                                                 <div class="col-md-9">
-                                                    <select class="form-select">
+                                                    <select class="form-select" name="chassis_no">
                                                         <option value="">--Select--</option>
                                                         <option value="Current">Chassis-1</option>
                                                         <option value="Saving">Chassis-2</option>
                                                         <option value="Loan">Chassis-3</option>
                                                     </select>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3 row">
+                                                <label for="example-text-input" class="col-md-3 col-form-label">Driving Lisense No</label>
+                                                <div class="col-md-9">
+                                                    <input name="customer_dl_no" class="form-control" type="text">
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">

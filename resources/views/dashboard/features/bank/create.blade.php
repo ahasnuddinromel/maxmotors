@@ -26,25 +26,25 @@
                                         <div class="mb-3 row">
                                             <label for="example-text-input" class="col-md-3 col-form-label">Bank Name</label>
                                             <div class="col-md-9">
-                                                <input class="form-control" type="text">
+                                                <input name="bank_name" class="form-control" type="text">
                                             </div>
                                         </div>
                                         <div class="mb-3 row">
                                             <label for="example-text-input" class="col-md-3 col-form-label">Branch Name</label>
                                             <div class="col-md-9">
-                                                <input class="form-control" type="text">
+                                                <input name="branch_name" class="form-control" type="text">
                                             </div>
                                         </div>
                                         <div class="mb-3 row">
                                             <label for="example-text-input" class="col-md-3 col-form-label">Account Name</label>
                                             <div class="col-md-9">
-                                                <input class="form-control" type="text">
+                                                <input name="account_name" class="form-control" type="text">
                                             </div>
                                         </div>
                                         <div class="mb-3 row">
                                             <label class="col-md-3 col-form-label">Account Type</label>
                                             <div class="col-md-9">
-                                                <select class="form-select">
+                                                <select class="form-select" name="account_type">
                                                     <option value="">--Select--</option>
                                                     <option value="Current">Current</option>
                                                     <option value="Saving">Saving</option>
@@ -55,25 +55,25 @@
                                         <div class="mb-3 row">
                                             <label for="example-text-input" class="col-md-3 col-form-label">Account Number</label>
                                             <div class="col-md-9">
-                                                <input class="form-control" type="number">
+                                                <input name="account_number" class="form-control" type="number">
                                             </div>
                                         </div>
                                         <div class="mb-3 row">
                                             <label for="example-text-input" class="col-md-3 col-form-label">Present Deposit</label>
                                             <div class="col-md-9">
-                                                <input class="form-control" type="text">
+                                                <input name="present_deposit" class="form-control" type="text">
                                             </div>
                                         </div>
                                         <div class="mb-3 row">
                                             <label for="example-date-input" class="col-md-3 col-form-label">Account Opening Date</label>
                                             <div class="col-md-9">
-                                                <input class="form-control" type="date"  id="example-date-input">
+                                                <input name="opening_date" class="form-control" type="date"  id="example-date-input">
                                             </div>
                                         </div>
                                         <div class="mb-3 row">
                                             <label for="exampleDataList" class="col-md-3 col-form-label">Area</label>
                                             <div class="col-md-9">
-                                                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                                                <input name="branch_area" class="form-control" id="exampleDataList">
                                                 <datalist id="datalistOptions">
                                                     <option value="Dhaka">
                                                     <option value="Barishal">
@@ -88,7 +88,7 @@
                                         <div class="mb-3 row">
                                             <label for="example-tel-input" class="col-md-3 col-form-label">Bank Contact No.</label>
                                             <div class="col-md-9">
-                                                <input class="form-control" type="text" id="example-tel-input">
+                                                <input name="mobile_number" class="form-control" type="text">
                                             </div>
                                         </div>
                                         <div class="mb-3 row">

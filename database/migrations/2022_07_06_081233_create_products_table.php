@@ -15,6 +15,14 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
+            $table -> string('brand_id');
+            $table -> string('color_id');
+            $table -> string('get_pass_token');
+            $table -> string('chassis_no');
+            $table -> string('engin_number');
+            $table -> string('frame_name');
+            $table -> integer('product_quantity');
+            $table -> boolean('status')->default(1);
             $table->timestamps();
         });
     }

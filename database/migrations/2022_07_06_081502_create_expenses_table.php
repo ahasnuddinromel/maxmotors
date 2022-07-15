@@ -15,6 +15,12 @@ class CreateExpensesTable extends Migration
     {
         Schema::create('expenses', function (Blueprint $table) {
             $table->id();
+            $table->string('expense_head');
+            $table->string('expense_cata');
+            $table->string('expense_by')->nullable();
+            $table->string('reason')->nullable();
+            $table->unsignedInteger('amount');
+            $table->string('disc')->nullable();
             $table->timestamps();
         });
     }

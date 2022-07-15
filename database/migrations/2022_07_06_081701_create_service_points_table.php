@@ -15,6 +15,11 @@ class CreateServicePointsTable extends Migration
     {
         Schema::create('service_points', function (Blueprint $table) {
             $table->id();
+            $table->strring('name');
+            $table->strring('phone_number');
+            $table->strring('email');
+            $table->strring('address');
+            $table->strring('location');
             $table->timestamps();
         });
     }

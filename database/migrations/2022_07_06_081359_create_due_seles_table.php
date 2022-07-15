@@ -15,6 +15,13 @@ class CreateDueSelesTable extends Migration
     {
         Schema::create('due_seles', function (Blueprint $table) {
             $table->id();
+            $table->string('customer_id');
+            $table->string('guarantor_name');
+            $table->string('guarantor_fathers_name');
+            $table->string('phone_number');
+            $table->string('guarantor_nid_no');
+            $table->string('cheque_no');
+            $table->longText('bank_details');
             $table->timestamps();
         });
     }

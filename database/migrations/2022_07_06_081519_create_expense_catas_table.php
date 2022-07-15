@@ -15,6 +15,8 @@ class CreateExpenseCatasTable extends Migration
     {
         Schema::create('expense_catas', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->boolean('status')->default(1);
             $table->timestamps();
         });
     }

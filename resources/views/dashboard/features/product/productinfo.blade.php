@@ -31,6 +31,17 @@
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
+                                                <label class="col-md-3 col-form-label">Model</label>
+                                                <div class="col-md-9">
+                                                    <select class="form-select" name="brand">
+                                                        <option value="">--Select--</option>
+                                                        <option value="Current">Model-1</option>
+                                                        <option value="Saving">Model-2</option>
+                                                        <option value="Loan">Model-3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3 row">
                                                 <label for="example-text-input" class="col-md-3 col-form-label">Type Of Body</label>
                                                 <div class="col-md-9">
                                                     <input name="type_of_body" class="form-control" type="text">
@@ -106,7 +117,7 @@
                                             <div class="mb-3 row">
                                                 <label for="example-text-input" class="col-md-3 col-form-label">Frame Name</label>
                                                 <div class="col-md-9">
-                                                    <input name="frame_name" class="form-control" type="Date">
+                                                    <input name="frame_name" class="form-control" type="text">
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">

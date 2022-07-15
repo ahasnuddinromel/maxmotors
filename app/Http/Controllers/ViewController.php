@@ -55,4 +55,8 @@ class ViewController extends Controller
         return view('dashboard.features.spearparts.create');
     }
 
+   public function customerInvoice(){
+    return view('dashboard.pages.customer.invoice');
+   }
+
 }

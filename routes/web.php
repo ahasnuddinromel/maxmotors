@@ -25,6 +25,7 @@ Route::group(['namespace' => 'App\Http\Controllers', 'prefix' => '/dashboard', '
     Route::get('/selespoint', [ViewController::class, 'addSelesPoint'])->name('selespoint');
     Route::get('/servicepoint', [ViewController::class, 'addServicePoint'])->name('servicepoint');
     Route::get('/spearparts', [ViewController::class, 'addSpearParts'])->name('spearparts');
+    Route::get('/invoice', [ViewController::class, 'customerInvoice'])->name('invoice');
 
 });
 

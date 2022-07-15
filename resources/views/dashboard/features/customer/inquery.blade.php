@@ -11,7 +11,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box">
-                                    <h4 class="card-title">Due Sele Information</h4>
+                                    <h4 class="card-title">Customer Inquery Information</h4>
                                 </div>
                             </div>
                         </div>
@@ -24,16 +24,9 @@
                                         <form action="" method="POST">
                                             @csrf
                                             <div class="mb-3 row">
-                                                <label for="example-text-input" class="col-md-3 col-form-label">Guarantor Name</label>
+                                                <label for="example-text-input" class="col-md-3 col-form-label">Name</label>
                                                 <div class="col-md-9">
-                                                    <input name="guarantor_name" class="form-control" type="text">
-                                                </div>
-                                            </div>
-
-                                            <div class="mb-3 row">
-                                                <label for="example-text-input" class="col-md-3 col-form-label">Father's Name</label>
-                                                <div class="col-md-9">
-                                                    <input name="guarantor_fathers_name" class="form-control" type="text">
+                                                    <input name="customer_name" class="form-control" type="text">
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
@@ -43,28 +36,48 @@
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
-                                                <label for="example-text-input" class="col-md-3 col-form-label">NID No.</label>
+                                                <label for="example-text-input" class="col-md-3 col-form-label">Email</label>
                                                 <div class="col-md-9">
-                                                    <input name="guarantor_nid_no" class="form-control" type="text">
+                                                    <input name="email" class="form-control" type="text">
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
-                                                <label for="example-text-input" class="col-md-3 col-form-label">Cheque No.</label>
+                                                <label for="example-text-input" class="col-md-3 col-form-label">Address</label>
                                                 <div class="col-md-9">
-                                                    <input name="cheque_no" class="form-control" type="text">
+                                                    <input name="address" class="form-control" type="number">
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
-                                                <label for="example-text-input" class="col-md-3 col-form-label">Bank Details</label>
+                                                <label class="col-md-3 col-form-label">Model</label>
                                                 <div class="col-md-9">
-                                                    <input name="bank_details" class="form-control" type="text">
+                                                    <select class="form-select" name="model">
+                                                        <option value="">--Select--</option>
+                                                        <option value="Current">Model-1</option>
+                                                        <option value="Saving">Model-2</option>
+                                                        <option value="Loan">Model-3</option>
+                                                    </select>
                                                 </div>
                                             </div>
-
-
+                                            <div class="mb-3 row">
+                                                <label class="col-md-3 col-form-label">Color</label>
+                                                <div class="col-md-9">
+                                                    <select class="form-select" name="color">
+                                                        <option value="">--Select--</option>
+                                                        <option value="Current">Color-1</option>
+                                                        <option value="Saving">Color-2</option>
+                                                        <option value="Loan">Color-3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3 row">
+                                                <label for="example-text-input" class="col-md-3 col-form-label">Wish To Buy</label>
+                                                <div class="col-md-9">
+                                                    <input name="buy_date" class="form-control" type="date">
+                                                </div>
+                                            </div>
                                             <div class="mb-3 row">
                                                 <div class="col-md-12">
-                                                    <input class="form-control btn btn-outline-danger" type="submit" value="Add Guarantor Info">
+                                                    <input class="form-control btn btn-outline-danger" type="submit" value="Add Inquery Info">
                                                 </div>
                                             </div>
 
