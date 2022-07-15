@@ -28,7 +28,6 @@ class CreateProductSpacifiesTable extends Migration
             $table->string('horse_power');
             $table->string('rpm');
             $table->string('cabin_capacity');
-            $table->string('number_Of_cylinders');
             $table->string('number_Of_standee');
             $table->string('wheel_base');
             $table->string('unloaded_weight');

@@ -1,17 +1,13 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ViewController;
-
-
+use Illuminate\Support\Facades\Route;
 
 Route::get('/dashboard', function () {
     return view('dashboard.main');
 })->middleware('auth')->name('dashboard');
 
-
-
-Route::group(['namespace' => 'App\Http\Controllers', 'prefix' => '/dashboard', 'middleware' => 'auth'], function(){
+Route::group(['namespace' => 'App\Http\Controllers', 'prefix' => '/dashboard', 'middleware' => 'auth'], function () {
     Route::get('/bank', [ViewController::class, 'bank'])->name('bank');
     Route::get('/bank/setup', [ViewController::class, 'bankSetup'])->name('bank.setup');
     Route::get('/employee', [ViewController::class, 'emplyee'])->name('employee');
@@ -26,7 +22,8 @@ Route::group(['namespace' => 'App\Http\Controllers', 'prefix' => '/dashboard', '
     Route::get('/servicepoint', [ViewController::class, 'addServicePoint'])->name('servicepoint');
     Route::get('/spearparts', [ViewController::class, 'addSpearParts'])->name('spearparts');
     Route::get('/invoice', [ViewController::class, 'customerInvoice'])->name('invoice');
+    Route::resource('/admin', 'AdminController');
 
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

@@ -92,6 +92,7 @@
                             <span class="color-primary">Setting</span>
                         </a>
                         <ul class="sub-menu" aria-expanded="true">
+                            <li><a href="{{route('admin.index')}}">All Admins</a></li>                           
                             <li><a href="{{route('business.info')}}">Business Info</a></li>
                             <li><a href="{{route('business.setup')}} ">Initial Finance</a></li>
                             <li><a href="{{route('selespoint')}}">Seles Point</a></li>
